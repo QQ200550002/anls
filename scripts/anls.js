@@ -5,7 +5,7 @@
 * 推荐在浏览器扩展使用，不推荐在QuanX使用。
 
 ===== ===== ===== ===== =====
-编辑日期：2023.09.12-2208
+编辑日期：2023.10.10-2038
 配置app：Quan X
 
 * 😎 转换器 by Peng-YM。TG频道: https://t.me/cool_scripts
@@ -37,28 +37,30 @@ try {
 // ==UserScript==
 // @name         安乐视
 // @author       Jones Miller
-// @version      23.07.28
+// @version      23.10.10
 // @namespace    https://t.me/jsday
 // @description  安乐视 你好！
-// @icon         https://greasyfork.s3.us-east-2.amazonaws.com/1lg9ukoimx8m178sou4i585ppers
-// @include      *://v.qq.com/*
-// @include      *://m.v.qq.com/*
-// @include      *://*.iqiyi.com/v_*
-// @include      *://v.youku.com/v_show/*
-// @include      *://m.youku.com/alipay_video/*
-// @include      *://m.youku.com/video/id*
-// @include      *://v.youku.com/pad_show/id*
-// @include      *://www.le.com/ptv/vplay/*
-// @include      *://m.le.com/vplay_*
-// @include      *://www.bilibili.com/bangumi/play/*
-// @include      *://m.bilibili.com/bangumi/play*
-// @include      *://www.mgtv.com/b/*
-// @include      *://m.mgtv.com/b*
-// @include      *://*.pptv.com/show/*
-// @include      *://tv.sohu.com/v*
-// @include      *://m.tv.sohu.com/v*
-// @include      *://*.iesdouyin.com/share/video/*
-// @include      *://*.youtube.com/*
+// @icon         https://greasyfork.s3.us-east-2.amazonaws.com/ei1h373r3vykus1iqc9wzp8mx9ub
+// @match        *://v.qq.com/*
+// @match        *://m.v.qq.com/*
+// @match        *://*.iqiyi.com/v_*
+// @match        *://v.youku.com/v_show/*
+// @match        *://m.youku.com/alipay_video/*
+// @match        *://m.youku.com/video/id*
+// @match        *://v.youku.com/pad_show/id*
+// @match        *://www.le.com/ptv/vplay/*
+// @match        *://m.le.com/vplay_*
+// @match        *://www.bilibili.com/bangumi/play/*
+// @match        *://m.bilibili.com/bangumi/play*
+// @match        *://www.mgtv.com/b/*
+// @match        *://m.mgtv.com/b*
+// @match        *://*.pptv.com/show/*
+// @match        *://tv.sohu.com/v*
+// @match        *://m.tv.sohu.com/v*
+// @match        *://*.douyin.com/video/*
+// @match        *://*.douyin.com/share/video/*
+// @match        *://*.iesdouyin.com/share/video/*
+// @match        *://*.youtube.com/*
 // @grant        unsafeWindow
 // @license      MIT
 // ==/UserScript==
@@ -66,11 +68,14 @@ try {
 (function() {
     'use strict';
 
+    var jmvers='23.10.10'; /* 当前版本 */
+
     var release="https://greasyfork.org/"; /* 发布站点 */
     var jmjsurl="https://greasyfork.org/zh-CN/scripts/453746"; /* 唯一地址 */
-    var jmvers='23.07.28<br>QuanX'; /* 当前版本 */
+
     var host=window.location.host; var href=window.location.href;
-    var jmuall="v.qq.com|iqiyi.com|youku.com|www.le.com|m.le.com|bilibili.com|mgtv.com|pptv.com|tv.sohu.com"; var jmuady="^https://www.iesdouyin.com/share/video/|^https://m.iesdouyin.com/share/video/"; var jmuayd="youtube.com";
+    var jmuall="v.qq.com|iqiyi.com|youku.com|www.le.com|m.le.com|bilibili.com|mgtv.com|pptv.com|tv.sohu.com"; var jmuady="^https://www.douyin.com/video/|^https://m.douyin.com/share/video/|^https://www.iesdouyin.com/share/video/|^https://m.iesdouyin.com/share/video/"; var jmuayd="youtube.com";
+
     function jmanuser() {
         function GetHttpRequest() {
             window.XMLHttpRequest;
@@ -100,7 +105,7 @@ try {
         ajaxPage("scrA",release+"scripts/"+jmber+".js");
         var jmupmo=document.querySelectorAll("#jmanlswin");
         for (var i=0;i<jmupmo.length;i++) {
-            jmupmo[i].style.display="block";
+            jmupmo[i].style.display="none";
         };
         var jmanlerr=document.querySelectorAll("#jmfn,.jmtx,.jmerr");
         for (var i=0;i<jmanlerr.length;i++) {
