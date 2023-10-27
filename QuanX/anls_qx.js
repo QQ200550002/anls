@@ -1,31 +1,12 @@
 /***** ***** ***** ***** *****
-
 名称：安乐视
-
-* 推荐在浏览器扩展使用，不推荐在QuanX使用。
-
-===== ===== ===== ===== =====
 编辑日期：2023.10.10-2038
 配置app：Quan X
 
+在重写添加：https://raw.githubusercontent.com/shling680/anls/main/QuanX/anls_qx.conf
+配置后重启浏览器，可能需要多次刷新页面
+
 * 😎 转换器 by Peng-YM。TG频道: https://t.me/cool_scripts
-
-===== ===== ===== ===== =====
-
-[rewrite_local]
-
-^https:\/\/m\.v\.qq\.com/* url script-response-body https://raw.githubusercontent.com/shling680/anls/main/QuanX/anls_qx.js
-^https:\/\/m\.iqiyi\.com/* url script-response-body https://raw.githubusercontent.com/shling680/anls/main/QuanX/anls_qx.js
-^https:\/\/m\.youku\.com/* url script-response-body https://raw.githubusercontent.com/shling680/anls/main/QuanX/anls_qx.js
-^https:\/\/m\.le\.com/* url script-response-body https://raw.githubusercontent.com/shling680/anls/main/QuanX/anls_qx.js
-
-[mitm]
-hostname = m.iqiyi.com, m.youku.com, m.le.com, m.v.qq.com
-
-* 可自行添加更多安乐视支持的站点
-
-* 配置后重启浏览器，可能需要多次刷新页面
-
 ***** ***** ***** ***** *****/
 
 try {
