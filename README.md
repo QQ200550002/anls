@@ -20,7 +20,7 @@
 
 飝 飝 、JW
 
-####  ** [更新日志](https://github.com/shling680/anls/blob/main/QuanX/README.md) **
+####  ** [更新日志](https://github.com/shling680/anls/blob/main/uplog.md) **
 
 <img width="210px" height="70px" src="https://greasyfork.s3.us-east-2.amazonaws.com/ei1h373r3vykus1iqc9wzp8mx9ub"/>logo
 <img width="200px" height="200px" src="https://greasyfork.s3.us-east-2.amazonaws.com/s212tkjjhh09iz4bcai0qi96qr4i"/>微信 赞赏
