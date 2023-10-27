@@ -7,7 +7,7 @@
 多接口自由选择 部分接口支持高清播放
 * 不保证能解析所有视频
 * 更多功能 和 安装 -> [安乐视](https://greasyfork.org/zh-CN/scripts/453746-%E5%AE%89%E4%B9%90%E8%A7%86)
-* [安乐视 for Alook](https://raw.githubusercontent.com/shling680/anls/main/scripts/%E5%AE%89%E4%B9%90%E8%A7%86.alook)
+* [安乐视 for Alook](https://github.com/shling680/anls/blob/main/scripts/%E5%AE%89%E4%B9%90%E8%A7%86.alook)
 * [安乐视 for QuanX](https://raw.githubusercontent.com/shling680/anls/main/QuanX/anls_qx.conf)
 
 ####  ** 声明 ** 
