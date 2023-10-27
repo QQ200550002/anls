@@ -7,7 +7,8 @@
 多接口自由选择 部分接口支持高清播放
 * 不保证能解析所有视频
 * 更多功能 和 安装 -> [安乐视](https://greasyfork.org/zh-CN/scripts/453746-%E5%AE%89%E4%B9%90%E8%A7%86)
-* [在 QuanX 使用](https://raw.githubusercontent.com/shling680/anls/main/anls.conf)
+* [安乐视 for Alook](https://raw.githubusercontent.com/shling680/anls/main/scripts/%E5%AE%89%E4%B9%90%E8%A7%86.alook)
+* [安乐视 for QuanX](https://raw.githubusercontent.com/shling680/anls/main/QuanX/anls_qx.conf)
 
 ####  ** 声明 ** 
 
@@ -19,7 +20,7 @@
 
 飝 飝 、JW
 
-####  ** [更新日志](https://github.com/shling680/anls/blob/main/uplog.md) **
+####  ** [更新日志](https://github.com/shling680/anls/blob/main/QuanX/uplog.md) **
 
 <img width="210px" height="70px" src="https://greasyfork.s3.us-east-2.amazonaws.com/ei1h373r3vykus1iqc9wzp8mx9ub"/>logo
 <img width="200px" height="200px" src="https://greasyfork.s3.us-east-2.amazonaws.com/s212tkjjhh09iz4bcai0qi96qr4i"/>微信 赞赏
