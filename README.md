@@ -6,7 +6,8 @@
 无广告 免登陆 VIP超前点播视频解析
 多接口自由选择 部分接口支持高清播放
 * 不保证能解析所有视频
-* 更多功能 -> [安乐视](https://greasyfork.org/zh-CN/scripts/453746-%E5%AE%89%E4%B9%90%E8%A7%86)
+* 更多功能 和 安装 -> [安乐视](https://greasyfork.org/zh-CN/scripts/453746-%E5%AE%89%E4%B9%90%E8%A7%86)
+* [在 QuanX 使用](https://raw.githubusercontent.com/shling680/anls/main/anls.conf)
 
 ####  ** 声明 ** 
 
