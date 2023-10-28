@@ -1,12 +1,15 @@
 /***** ***** ***** ***** *****
 名称：安乐视
-编辑日期：2023.10.10-2038
+编辑日期：2023.10.28-1920
 配置app：Quan X
 
-在重写添加：https://raw.githubusercontent.com/shling680/anls/main/QuanX/anls_qx.conf
+TG 群组：https://t.me/jsday
+TG 频道：https://t.me/QuanXJS
+
+重写添加：https://raw.githubusercontent.com/shling680/anls/main/QuanX/anls_qx.conf
 配置后重启浏览器，可能需要多次刷新页面
 
-* 😎 转换器 by Peng-YM。TG频道: https://t.me/cool_scripts
+转换器 by Peng-YM。TG频道: https://t.me/cool_scripts
 ***** ***** ***** ***** *****/
 
 try {
@@ -18,7 +21,7 @@ try {
 // ==UserScript==
 // @name         安乐视
 // @author       Jones Miller
-// @version      23.10.10
+// @version      23.10.28
 // @namespace    https://t.me/jsday
 // @description  安乐视 你好！
 // @icon         https://greasyfork.s3.us-east-2.amazonaws.com/ei1h373r3vykus1iqc9wzp8mx9ub
@@ -49,13 +52,20 @@ try {
 (function() {
     'use strict';
 
-    var jmvers='23.10.10'; /* 当前版本 */
+/* 自定义壁纸，默认关闭，true为开启，false为关闭; */
+    var usertu=false;
 
+/* 自定义壁纸链接，默认美女壁纸api，可自行替换链接或api */
+    var ustuapi="http://api.btstu.cn/sjbz/?lx=m_meizi";
+
+    var jmvers="23.10.28-QuanX"; /* 当前版本 */
     var release="https://greasyfork.org/"; /* 发布站点 */
     var jmjsurl="https://greasyfork.org/zh-CN/scripts/453746"; /* 唯一地址 */
 
     var host=window.location.host; var href=window.location.href;
-    var jmuall="v.qq.com|iqiyi.com|youku.com|www.le.com|m.le.com|bilibili.com|mgtv.com|pptv.com|tv.sohu.com"; var jmuady="^https://www.douyin.com/video/|^https://m.douyin.com/share/video/|^https://www.iesdouyin.com/share/video/|^https://m.iesdouyin.com/share/video/"; var jmuayd="youtube.com";
+    var jmuall="v.qq.com|iqiyi.com|youku.com|www.le.com|m.le.com|bilibili.com|mgtv.com|pptv.com|tv.sohu.com";
+    var jmuady="^https://www.douyin.com/video/|^https://m.douyin.com/share/video/|^https://www.iesdouyin.com/share/video/|^https://m.iesdouyin.com/share/video/";
+    var jmuayd="youtube.com";
 
     function jmanuser() {
         function GetHttpRequest() {
@@ -92,32 +102,10 @@ try {
         for (var i=0;i<jmanlerr.length;i++) {
             jmanlerr[i].style.display="none";
         };
-        var userswitch=false;
-        if (href.match(jmuayd)) {
-            var userswitch=false;
-        };
-        function userSelect() {
-            var jmuim="https://s1.aigei.com/src/img/png/8f/8fe2b68f98e94a04879b3fb25c448d3b.png?imageMogr2/auto-orient/thumbnail/!234x234r/gravity/Center/crop/234x234/quality/85/&e=1735488000&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:rnxfQgMf8fa2kEXq4MCK41-YJ4Q=";
-            var jmum=document.getElementById("jmuhm");
-            var jmbot=document.createElement("div");
-            jmbot.id="jmser";
-            jmbot.innerText="user";
-            jmbot.style.backgroundImage="url("+jmuim+")";
-            jmum.parentNode.insertBefore(jmbot,jmum.nextSibling);
-            jmser.onclick=function() {
-                jmusn.style.display="block";
-            };
-            function userct() {
-                for (var i=0; i < userapis.length; i++) {
-                    var jmuapis=document.createElement("a");
-                    jmuapis.innerHTML="<span class='jmalsapi' url='"+userapis[i].url+"'>"+userapis[i].name+"</span>";
-                    jmforuser.appendChild(jmuapis);
-                };
-            };
-            userct();
-        };
-        if (userswitch) {
-            userSelect();
+        jmmore.style.cssText+="background-size:18px;background-image:url(https://quantumultx.org/wp-content/uploads/2022/10/1664620121-favicon-70x70.png);";
+        if (usertu) {
+          jmimg.style.cssText+="width:auto;max-width:100%;height:auto;";
+          jmimg.src=ustuapi;
         };
         jmbdver.innerHTML=jmvers;
     };
