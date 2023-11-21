@@ -1,27 +1,20 @@
-# als
+# 安乐视
+* [点此安装 23.11.12](https://github.com/shling680/anls/raw/main/anls.user.js) - ✅ 可用
+* [安乐视 for Alook](https://github.com/shling680/anls/blob/main/scripts/%E5%AE%89%E4%B9%90%E8%A7%86.alook) - ✅ 可用
+* [安乐视 for QuanX](https://raw.githubusercontent.com/shling680/anls/main/QuanX/anls_qx.conf) - ❌ 不可用
 
-#### . 安乐视
 
-[“ 点此安装 23.11.12”](https://github.com/shling680/anls/raw/main/anls.user.js)
+#### * [更多介绍 -> Greasy Fork 安乐视](https://greasyfork.org/zh-CN/scripts/453746-%E5%AE%89%E4%B9%90%E8%A7%86)
 
-《 * VIP视频解析 * 》
-无广告 免登陆 VIP超前点播视频解析
-多接口自由选择 部分接口支持高清播放
-* 不保证能解析所有视频
+#### * [更新日志](https://github.com/shling680/anls/blob/main/uplog.md)
 
-* 更多介绍 -> [Greasy Fork 安乐视](https://greasyfork.org/zh-CN/scripts/453746-%E5%AE%89%E4%B9%90%E8%A7%86)
-* [安乐视 for Alook](https://github.com/shling680/anls/blob/main/scripts/%E5%AE%89%E4%B9%90%E8%A7%86.alook)
-* [安乐视 for QuanX](https://raw.githubusercontent.com/shling680/anls/main/QuanX/anls_qx.conf)
-
-####  ** [更新日志](https://github.com/shling680/anls/blob/main/uplog.md) **
-
-####  ** 声明 ** 
+#### * 声明
 
 非专业人士 所有数据收集于互联网
 根据个人喜好调整修改 如有侵权 联系删除
 不保证脚本的兼容性和稳定性
 
-####  ** 感谢 ** 
+#### * 感谢
 
 飝 飝 、JW
 
